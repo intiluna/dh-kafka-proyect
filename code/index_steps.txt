@@ -1,0 +1,6 @@
+name, description
+step1.py," ingesta data desde csv y crea topic ""step1-ingest"""
+step2.py," consume datos desde topic ""step1-ingest"", hace análisis de sentimiento y genera topic ""step2-sa"""
+step3_db_writer.py," consume datos de ""step2-sa"" y guarda en Mongodb"
+step3_ksqldb.py," consume datos de ""step2-sa"" y genera tablas agregadas y stream"
+step4_save_mongodb.py," consume datos de ""step3-agg"" y guarda en Mongodb"

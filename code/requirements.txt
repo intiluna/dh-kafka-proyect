@@ -1,0 +1,6 @@
+Flask==2.0.1
+Flask-Kafka==0.1.0
+matplotlib==3.4.2
+confluent-kafka==1.7.0
+Werkzeug==2.0.1
+

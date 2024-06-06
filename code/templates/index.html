@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafka Project by Inti Luna</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        
+    <script>
+        // Recarga web cada 2 segundo
+        setInterval(function(){
+            window.location.reload();
+        }, 2000);
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Proyecto para módulo Kafka en Datahack por Inti Luna</h1>
+        <h2>Plataforma de monitoreo de opiniones sobre producto: Maleta</h2>
+        <h2>Usando Python: Kafka,Flask y nltk para crear infraestructura y hacer análisis de sentimiento</h2>
+    </header>
+    
+    <!-- Body -->
+    <div>
+        <p> código disponible en:  <a href="https://github.com/intiluna/dh-kafka-proyect">repositorio de github</a>  </p>
+    </div>
+
+        
+    <h1>Análisis de sentimiento en base a streams de datos</h1>
+    <!-- plot y tabla -->
+    <div class="flex-container">
+
+        <div class="plot-container">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Bar Plot de SA">
+        </div>
+        
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Negative Count</th>
+                    <th>Neutral Count</th>
+                    <th>Positive Count</th>
+                    <th>Total Count</th>
+                </tr>
+                <tr>
+                    <td>{{ data.NEGATIVE_COUNT }}</td>
+                    <td>{{ data.NEUTRAL_COUNT }}</td>
+                    <td>{{ data.POSITIVE_COUNT }}</td>
+                    <td>{{ data.TOTAL_COUNT }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+        <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Inti Luna. inti.luna.aviles@gmail.com</p>
+    </footer>
+    
+</body>
+</html>
+
+
